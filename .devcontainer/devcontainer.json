@@ -1,0 +1,17 @@
+{
+    "name": "Playwright Screenshot Devcontainer",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": "."
+    },
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python"
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-azuretools.vscode-docker"
+    ],
+    "forwardPorts": [],
+    "postCreateCommand": "pip install --no-cache-dir -r requirements.txt && playwright install",
+    "remoteUser": "vscode"
+}

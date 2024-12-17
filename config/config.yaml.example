@@ -1,0 +1,30 @@
+browsers:
+  - name: chromium
+    width: 575
+    height: 1080
+  - name: chromium
+    width: 576
+    height: 1080
+  - name: chromium
+    width: 768
+    height: 1080
+  - name: chromium
+    width: 992
+    height: 1080
+  - name: chromium
+    width: 1200
+    height: 1080
+  - name: chromium
+    width: 1400
+    height: 1080
+
+tests:
+  - name: 確認くん
+    url: https://www.ugtop.com/spill.shtml
+    settings:
+      wait_time: 3000
+      cookies:
+        - name: cookie_name
+          value: "cookie_value"
+          domain: "www.ugtop.com"
+          path: "/"
